@@ -1,0 +1,123 @@
+<!--ESTA PAGINA ES DONDE ESTAN TODOS LOS PROYECTOS-->
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/41685d7c86.js" crossorigin="anonymous"></script>
+  <!--Styles-->
+  <link rel="stylesheet" href="CSS/styles.css">
+  <!--Fuente-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+ 
+  <title> COCOLAB </title>
+
+</head>
+
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    color: whitesmoke;
+    background-color: #04052b; /*color de relleno fondo*/
+  }
+  .seccion-principal {
+      background-color: #04052b;
+      padding-bottom: 1em;
+  }
+  main{
+    min-height: 1000vw;
+  }
+  .primera-columna,
+  .segunda-columna {
+      padding-bottom: 1em;/*6.25*/
+      margin-top: 3em;/*3.12*/
+      height: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  h3{
+    text-align: center;
+    text-shadow:-4px 3px 0 #04052b;
+    font-size: 1em;
+  }
+
+  #im-1,
+  #im-2,
+  #im-3,
+  #im-4 {
+      max-width: 100%;
+      width: 350px;
+      border-radius: 6px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+      cursor: pointer; /*cambia a manito*/
+      transition: all 0.2s ease-in-out;
+  }
+  #im-1:hover,
+  #im-2:hover,
+  #im-3:hover,
+  #im-4:hover{
+    transform: translateX(-20px);
+  }
+</style>
+
+<body> 
+  <header>
+    <br><br>
+    <h1 class="titulo"> COCOLAB </h1>
+    <br>
+     <nav>
+        <a class="nav" href="../index.html" >Inicio</a>
+        <a class="nav" href="proyectos.html" >Proyectos</a>
+        <a class="nav" href="cursos.html" >Cursos</a>
+        <a class="nav" href="charlemos.html" >Charlemos</a>
+     </nav>
+</header>
+<main>
+  <!-- Contenido -->
+    <section class="seccion-principal">
+        <article class="primera-columna">
+            <div>
+              <h3>Sensor ultrasonico</h3>
+              <a href="armado1.html#proyecto1">
+              <img src="imagenes/img1.jpg" alt="Proyecto 1" id="im-1">
+              </a>
+            </div>
+            <div>
+              <h3>Sensor de temperatura</h3>
+              <a href="armado1.html#proyecto2">
+               <img src="Imagenes/img2.jpg" alt="Proyecto 2" id="im-2">
+              </a>
+            </div>
+        </article>
+        <article class="segunda-columna">
+            <div>
+                <h3>Semaforo</h3>
+                <a href="armado1.html#proyecto3">
+                <img src="Imagenes/img3.jpg" alt="Proyecto 3" id="im-3">
+                </a>
+            </div>
+            <div>
+              <h3>Brazo Robotico</h3>
+              <a href="armado1.html#proyecto4">
+              <img src="Imagenes/img4.jpg" id="im-4">
+              </a>
+            </div>
+        </article>
+    </section>
+  </main>
+  <footer>
+    <address>
+      <a href="https://www.instagram.com/limoncitosalvaje/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+     <br>
+    </address>
+    <p id="p2">© 2021 COCOLAB</p>
+</footer>
+</body>
+</html>

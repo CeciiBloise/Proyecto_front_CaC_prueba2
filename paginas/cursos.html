@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+   <meta charset="utf-8"/>
+   <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Iconos-->
+   <script src="https://kit.fontawesome.com/41685d7c86.js" crossorigin="anonymous"></script>
+   <!--Styles-->
+   <link rel="stylesheet" href="CSS/styles.css">
+   <!--Fuente-->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  
+   <title> COCOLAB </title>
+</head>
+<style>
+body{
+    color: whitesmoke;
+    background-color: #04052b;
+}
+.principal{
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+}
+.contenedor{
+   display: flex;
+   justify-content: center;
+   margin-right: 10px;
+   height: 100%;
+}
+ .contenedor_titulo-1 h2{
+   color:whitesmoke;
+    /*text-align: center;*/
+    font-size: 60px; 
+    font-weight: bold; 
+    text-shadow:-4px 3px 0 #333232;
+    margin-bottom: 20px;
+    /*margin-top: 16px;*/
+ }
+ .contenedor_titulo-1 .volver{
+   color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+ }
+ .volver:hover{
+   color: rgba(76,176,201,255);
+}
+.contenedor_img{
+   animation: movimiento 2.5s linear infinite;
+}
+.contenedor_img img{
+   width: 600px;
+   display: block;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+</style>
+<body>
+   <section class="contenedor principal">
+      <secrion class="contenedor_titulo-1">
+          <h2>ESTAMOS EN REPARACION</h2>
+          <a href="../index.html" class="volver">Volver a inicio</a>
+      </secrion>
+      <div class="contenedor_img">
+          <img src="Imagenes/img-1.png" alt="Reparacion">
+      </div>
+  </section>
+</body>
+</html>

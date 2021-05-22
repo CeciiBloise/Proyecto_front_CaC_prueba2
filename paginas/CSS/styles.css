@@ -1,0 +1,70 @@
+/***HOJA DE ESTILOS***/
+/*Selector universal*/
+*{
+    margin: 0;/*el margen para los cuatro lados*/
+    padding: 0;/*el espacio de relleno*/
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive; /*establece una lista de fuentes */
+}
+/*encabezado*/
+.titulo{
+    color:whitesmoke;
+    text-align: center;/*me centra el titulo*/
+    font-size: 4em; /*tamano*/
+    font-weight: bold; /*especifica el ancho de la fuente */
+    text-shadow:-4px 3px 0 #333232; /*sombra del texto*/
+}
+header{
+    background: url('imagenes/index2.jpg');
+    height: 22em;/*tamano del header*/
+    background-size: cover;/*para que el contenido se adapte*/
+    background-repeat: no-repeat;
+
+    min-width: 100vw;
+    margin:auto;
+    padding: 1.5em 0;
+
+    text-align: center;
+    font-size: 1em;
+}
+
+.nav{
+    /*extructura boton*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.312em 0.312em; /*le da profundidad*/
+    border-radius: 3px; /*redondea los bordes*/
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);/*le da sombra al boton*/
+    /*estilo*/
+    color: black;/*color de la letra*/
+    background-color: whitesmoke ; /*color del boton*/
+
+}
+.nav:hover{/*hace que el boton sea mas oscuro cuando paso el cursor*/
+    background-color: rgba(245, 245, 245, 0.671)
+}
+/*Pie de pagina*/
+footer{
+    border-top: 0.125em solid #4cb0c9;/* #0d1259;*/
+    background-color:#04052b;
+    color:whitesmoke;
+  
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 0;
+}
+#p2{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Audiowide', cursive;
+    font-size: 1em;
+}
+.fab{
+    color: whitesmoke;
+    font-size: 1,5vw;
+    text-align: center;
+    text-decoration: none;
+}
+.fab:hover{/*hace que el boton sea mas oscuro cuando paso el cursor*/
+    color: rgba(76,176,201,255);
+}
